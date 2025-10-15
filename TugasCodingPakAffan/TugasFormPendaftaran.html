@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h2>Form Pendaftaran Kursus Pemerograman</h2>
+        
+        
+    <form action="sumbit" method="_POST">
+        <table border="0" cellspacing="3">
+        <tr>
+            <td><label for="Nama">Nama Lengkap :</label></td>
+            <td><input type="text" id="Nama" name="Nama" required maxlength="60"></td>
+         </tr>
+        <tr>
+            <td><label for="email">Email :</label></td>
+            <td><input type="email" id="email" name="email" required></td>
+         </tr>
+        <tr>
+            <td><label for="nomer_telefon">No.Telfon :</label></td>
+            <td><input type="text" id="nomer_telefon" name="nomer_telefon" required maxlength="12"></td>
+         </tr>
+        <tr>
+            <td><label for="pass">Password :</label></td>
+            <td><input type="password" id="pass" name="pass"></td>
+        </tr>
+        <tr>
+            <td><label for="pass">Konfirmasi Password :</label></td>
+            <td><input type="password" id="pass" name="pass"></td>
+        </tr>   
+        <tr>
+            <td><label for="jenis_kelamin">Jenis Kelamin :</label></td>
+            <td><input type="radio" name="jenis_kelamin">Laki-Laki</td>
+            <td><input type="radio" name="jenis_kelamin">Perempuan</td>
+        </tr>
+        <tr>
+            <td rowspan="6"><label for="Bahasa_Pemerograman">Pilih Bahasa Pemerograman :</label></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="Bahasa_Pemerograman" id="Bahasa_Pemerograman">HTML</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="Bahasa_Pemerograman" id="Bahasa_Pemerograman">CSS</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="Bahasa_Pemerograman" id="Bahasa_Pemerograman">JAVA</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="Bahasa_Pemerograman" id="Bahasa_Pemerograman">PHP</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="Bahasa_Pemerograman" id="Bahasa_Pemerograman">PYTHON</td>
+        </tr>
+        <tr>
+            <td><label for="Kursus">Pilih Kelas Kursus :</label></td>
+            <td>
+                <select name="Kursus" id="Kursus">
+                    <option value="Kursus">Beginner</option>
+                    <option value="Kursus">Intermidate</option>
+                    <option value="Kursus">Advance</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="Tanggal_Lahir"></label>Tanggal Lahir :</td>
+            <td><input type="date" name="Tanggal_Lahir" id="Tanggal_Lahir"></td>
+        </tr>
+        <tr>
+            <td><label for="foto_ktp">Upload KTP Kartu Pelajar :</label></td>        
+            <td colspan="4"><input type="file" name="foto_ktp"></td>
+        </tr>
+        <tr>
+            <td><label for="Alasan">Alasan Mengikuti Kursus :</label></td>
+            <td><textarea name="Alasan" id="Alasan"></textarea></td>
+        </tr>
+        <tr>
+            <td><label for="waktu_bljr">Estiminasi Waktu Belajar (jam belajar) :</label></td>
+            <td><input type="range" id="range" min="0" max="100" value="50"></td>
+        </tr>
+        
+    </table>
+
+    <input type="button"  value="Kosongkan Halaman">
+    <input type="submit"  value="Daftar">
+    </form>
+    
+</body>
+</html>

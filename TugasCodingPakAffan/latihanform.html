@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+	<body>
+		<form action="sumbit" method="post">
+			<table border="0" cellspacing="0" cellpadding="2">
+			
+				<tbody>
+				
+					<tr>
+						<td><label for="text">Text</label></td>
+						<td>:</td>
+						<td><input type="text" id="text" required></td>
+					</tr>
+					<tr>
+						<td><label for="nik">NIK</label></td>
+						<td>:</td>
+						<td><input type="text" id="nik" required maxlength="16"></td>
+					</tr>
+					<tr>
+						<td><label for="pass">Password</label></td>
+						<td>:</td>
+						<td><input type="password" id="pass"></td>
+					</tr>
+					<tr>
+						<td><label for="email">E-mail</label></td>
+						<td>:</td>
+						<td><input type="email" id="email" name="email"></td>
+					</tr>
+					<tr>
+						<td><label for="foto">Foto</label></td>
+						<td>:</td>
+						<td><input type="file" id="foto" name="foto"></td>
+					</tr>
+					<tr>
+						<td>Radio</td>
+						<td>:</td>
+						<td><label for="radio1">radio 1</label>
+							<input type="radio" id="radio1" name="pilih" value="radio1">
+							<label for="radio2">radio 2</label>
+							<input type="radio" id="radio2" name="pilih" value="radio2">
+						</td>
+					</tr>
+					<tr>
+						<td>Checkbox</td>
+						<td>:</td>
+						<td><label for="chk1">Checkbox 1</label>
+							<input type="checkbox" id="chk1" name="pilih" value="Checkbox 1">
+							<label for="chk2">Checkbox 2</label>
+							<input type="checkbox" id="chk2" name="pilih" value="Checkbox 2">
+						</td>
+					</tr>
+					<tr>
+						<td><label for="opsi">Combo Box</label></td>
+						<td>:</td>
+						<td><select>
+								<option>Pilihan 1</option>
+								<option>Pilihan 2</option>
+								<option>Pilihan 3</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td><label for="alamat">Textarea</label></td>
+						<td>:</td>
+						<td><textarea></textarea></td>
+					</tr>
+					<tr>
+						<td><label for="range">Range</label></td>
+						<td>:</td>
+						<td><input type="range" id="range" name="range" min="0" max="100" value="30"></td>
+					</tr>
+					<tr>
+						<td colspan="3"><center><button type="submit"> Button</button></center></td>
+					</tr>
+					
+				</tbody>
+				
+			</table>
+		</form>
+	</body>
+	
+</html>
